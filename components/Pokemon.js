@@ -2,18 +2,18 @@ import { useState } from 'react';
 import { View, Text, Button, Image } from 'react-native';
 
 export default function () {
-  count [nome, setNome] = useState('');
-  cont [img, setImage] = useState('');
-  cont [descricao, setDescricao] = useState('');
+  const [nome, setNome] = useState('');
+  const [img, setImg] = useState('');
+  const [descricao, setDescricao] = useState('');
 
   function loadSquirtle() {
-    setNome(Squirtle);
-    setImg(required('../assets/squirtle.png'));
+    setNome('Squirtle');
+    setImg(require('../assets/squirtle.png'));
     setDescricao('');
   }
   function loadpikachu() {
-    setNome(Pikachu);
-    setImg(required('../assets/pikachu.png'));
+    setNome('Pikachu');
+    setImg(require('../assets/pikachu.png'));
     setDescricao('');
     
   }
@@ -31,3 +31,4 @@ export default function () {
     </View>
   );
 }
+
